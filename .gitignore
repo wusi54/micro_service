@@ -1,3 +1,5 @@
 .test.json
 .env
 venv
+.idea
+*.pyc
