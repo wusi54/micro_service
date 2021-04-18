@@ -17,5 +17,12 @@ print('2:全部的微服务信息\n',session.get_all_service())
 #获取相应服务的配置信息
 print('3:查询微服务配置信息\n',session.get('cmdb-report-service'))
 #微服务远程调用
-print('4:微服务调用方式\n',cli.call('sum',1,4))
+print('4:微服务函数调度方式\n',cli.call('sum',1,4))
+print(cli.call('hello'))
+
+print('5:远程调度类方法')
+print(cli.call('CmdbService.get'))
+
+
+# print('5:调用类方法\n',cli.call('CmdbService.get'))
 
